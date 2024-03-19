@@ -1,11 +1,12 @@
  - name: repository_size.yml
   uses: actions/checkout@v4.1.1
+  on : [push, pull request]
 
  jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo
+      - run: echo $(github.head_ref)
       - run: du -skh --exclude=".git"
             
