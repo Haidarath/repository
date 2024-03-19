@@ -1,4 +1,4 @@
- - name: repository_size.yml
+- name: repository_size.yml
   uses: actions/checkout@v4.1.1
   on : [push, pull request]
 
