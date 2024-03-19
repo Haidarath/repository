@@ -1,0 +1,13 @@
+- name: repository_mirroring.yml
+uses: pixta-dev/repository-mirroring-action@v1.1.1
+
+jobs:
+  dfgh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo $((github.head_ref))
+      - run: du -skh --exclude=".git"
+
+
+            
